@@ -70,6 +70,7 @@ if (isset($_POST['login'])) {
             width: 100%;
             padding: 12px;
             background-color: #28a745;
+            margin-bottom: 5px;
             color: white;
             font-size: 1.1em;
             border: none;
@@ -98,6 +99,7 @@ if (isset($_POST['login'])) {
             <input type="password" name="password" required>
             <button type="submit" name="login">Login</button>
         </form>
+        <a href="register.php"><button>Register</button></a>
         <?php if (isset($error_message)): ?>
             <p class="error-message"><?= htmlspecialchars($error_message); ?></p>
         <?php endif; ?>
